@@ -7,9 +7,14 @@ const Hero: React.FC = () => {
     <section className="relative min-h-[90vh] flex items-center bg-white overflow-hidden pt-24 pb-12">
       {/* Espaçamento extra para telas pequenas, evitando que o texto fique colado ao header */}
       <style>{`
+        @media (max-width: 1600px) {
+          .hero-content-fix {
+            margin-top: 6rem;
+          }
+        }
         @media (max-width: 900px) {
           .hero-content-fix {
-            margin-top: 2.5rem;
+            margin-top: 7.5rem;
           }
         }
       `}</style>
