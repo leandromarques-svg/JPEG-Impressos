@@ -5,9 +5,17 @@ import { WHATSAPP_LINK, INSTAGRAM_LINK } from '../constants';
 const Hero: React.FC = () => {
   return (
     <section className="relative min-h-[90vh] flex items-center bg-white overflow-hidden pt-24 pb-12">
+      {/* Espaçamento extra para telas pequenas, evitando que o texto fique colado ao header */}
+      <style>{`
+        @media (max-width: 900px) {
+          .hero-content-fix {
+            margin-top: 2.5rem;
+          }
+        }
+      `}</style>
       <div className="absolute top-0 right-0 w-1/4 h-full bg-magenta opacity-[0.03] -skew-x-12 transform translate-x-1/2 hidden lg:block" />
       
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-6 relative z-10 hero-content-fix">
         <div className="max-w-4xl animate-fade-in">
           <h1 className="text-5xl md:text-8xl font-extrabold text-black leading-[1.1] mb-8">
             Impressos, comunicação visual e <span className="text-magenta">brindes personalizados</span>
