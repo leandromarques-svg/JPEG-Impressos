@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
                 <div className="p-3 bg-magenta/5 rounded-full">
                   <MapPin className="w-5 h-5 text-magenta" />
                 </div>
-                <span className="text-sm">Centro - Guararema-SP</span>
+                <span className="text-sm">Praça Nove de Julho, 108 - centro - Guararema-SP - CEP 08900-000</span>
               </li>
             </ul>
           </div>
